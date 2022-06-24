@@ -6,5 +6,4 @@ describe("EarthYears", () => {
     const age = new EarthYears(3);
     expect(age.ageOnEarth).toEqual(3)
   });
-
 });

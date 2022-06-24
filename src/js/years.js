@@ -1,8 +1,11 @@
 // import $ from 'jquery';
 
- const exampleTestFunction = () => {
-  console.log('hi there, from the deck');
-  return 'hi there, from the deck';
-};
+ export default class EarthYears {
+  constructor(ageOnEarth) {
+  this.ageOnEarth = ageOnEarth
 
-export default exampleTestFunction;
+
+  }
+ }
+
+
