@@ -22,3 +22,9 @@ test('should correctly return the inputted Earth age in Mars years ', () => {
   const age = new EarthYears(3);
   expect(age.marsAge()).toEqual(5.64);
 });
+
+test('should correctly return the inputted Earth age in Jupiter years ', () => {
+  const age = new EarthYears(3);
+  expect(age.jupiterAge()).toEqual(35.58);
+});
+
