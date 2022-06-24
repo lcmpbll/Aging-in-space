@@ -19,11 +19,11 @@
 
   }
   marsAge () {
-    this.ageOnMars = this.ageOnEarth * 1.88;
+    this.ageOnMars = this.ageOnEarth * .53;
     return parseFloat(this.ageOnMars.toFixed(2));
   }
   jupiterAge () {
-    this.ageOnJupiter = this.ageOnEarth * 11.86;
+    this.ageOnJupiter = this.ageOnEarth * 0.084;
     return parseFloat(this.ageOnJupiter.toFixed(2));
   }
  }
