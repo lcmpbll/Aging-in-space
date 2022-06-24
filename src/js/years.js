@@ -1,12 +1,12 @@
 
  export default class EarthYears {
-  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter, lifeExpectancy) {
+  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter, yearsRemaining) {
   this.ageOnEarth = ageOnEarth;
   this.ageOnMercury = ageOnMercury;
   this.ageOnVenus = ageOnVenus;
   this.ageOnMars = ageOnMars;
   this.ageOnJupiter = ageOnJupiter;
-  this.lifeEpectancy = lifeExpectancy;
+  this.yearsRemaining = yearsRemaining;
   }
   mercuryAge () {
     this.ageOnMercury = this.ageOnEarth * 4.14;
@@ -24,6 +24,10 @@
   jupiterAge () {
     this.ageOnJupiter = this.ageOnEarth * 0.084;
     return parseFloat(this.ageOnJupiter.toFixed(2));
+  }
+  lifeExpectancy () {
+    this.yearsRemaining = 80 - this.ageOnEarth;
+    return this.yearsRemaining;
   }
 }
 
