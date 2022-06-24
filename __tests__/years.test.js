@@ -1,7 +1,5 @@
 import EarthYears from '../src/js/years.js';
 
-
-
 describe("EarthYears", () => {
   test("Should set the variable age equal to a number", () => {
     const age = new EarthYears(3);
@@ -29,8 +27,5 @@ test('should correctly return the inputted Earth age in Jupiter years ', () => {
   expect(age.jupiterAge()).toEqual(.25);
 });
 
-test('should return a life expectancy based on inputted age and average life expectancy', () => {
-  const age = new EarthYears(3);
-  expect(age.lifeExpectancy()).toEqual(77);
-})
+
 

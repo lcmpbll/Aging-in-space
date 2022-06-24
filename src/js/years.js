@@ -1,17 +1,16 @@
-// import $ from 'jquery';
 
  export default class EarthYears {
-  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter) {
+  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter, lifeExpectancy) {
   this.ageOnEarth = ageOnEarth;
   this.ageOnMercury = ageOnMercury;
   this.ageOnVenus = ageOnVenus;
-  this.ageOnMars = ageOnMars
+  this.ageOnMars = ageOnMars;
   this.ageOnJupiter = ageOnJupiter;
+  this.lifeEpectancy = lifeExpectancy;
   }
   mercuryAge () {
     this.ageOnMercury = this.ageOnEarth * 4.14;
     return parseFloat(this.ageOnMercury.toFixed(2));
-    
   }
   venusAge () {
     this.ageOnVenus = this.ageOnEarth * 1.6;
@@ -26,6 +25,6 @@
     this.ageOnJupiter = this.ageOnEarth * 0.084;
     return parseFloat(this.ageOnJupiter.toFixed(2));
   }
- }
+}
 
 
