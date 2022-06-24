@@ -1,6 +1,6 @@
 
  export default class EarthYears {
-  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter, yearsRemaining, yearsRemainingJupiter) {
+  constructor(ageOnEarth, ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter, yearsRemaining, yearsRemainingJupiter, yearsRemainingMars, yearsRemainingVenus, yearsRemainingMercury) {
   this.ageOnEarth = ageOnEarth;
   this.ageOnMercury = ageOnMercury;
   this.ageOnVenus = ageOnVenus;
@@ -8,6 +8,9 @@
   this.ageOnJupiter = ageOnJupiter;
   this.yearsRemaining = yearsRemaining;
   this.yearsRemainingJupiter = yearsRemainingJupiter;
+  this.yearsRemainingMars = yearsRemainingMars;
+  this.yearsRemainingVenus = yearsRemainingVenus;
+  this.yearsRemainingMercury = yearsRemainingMercury;
   }
   mercuryAge () {
     this.ageOnMercury = this.ageOnEarth * 4.14;
@@ -31,8 +34,12 @@
     return parseFloat(this.yearsRemaining.toFixed(2));
   }
   lifeExpectancyJupiter () {
-    this.yearsRemainingJupiter = 80 - this.ageOnJupiter;
-    return this.yearsRemainingJupiter;
+    this.yearsRemainingJupiter = (80 * .084) - this.ageOnJupiter;
+    return parseFloat(this.yearsRemainingJupiter.toFixed(2));
+  }
+  lifeExpectancyMars () {
+    this.yearsRemainingMars = (80 * .53) - this.ageOnMars;
+    return parseFloat(this.yearsRemainingMars.toFixed(2));
   }
 }
 
