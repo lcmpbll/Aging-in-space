@@ -52,12 +52,21 @@ test('should determine the number of years a user has left in Venus years',
   expect(age.venusAge()).toEqual(48.0);
   expect(age.lifeExpectancyVenus()).toEqual(80);
 });
+
 test('should determine the number of years a user has left in Mercury years',
 () => {
   const age = new EarthYears(30);
   expect(age.mercuryAge()).toEqual(124.2);
   expect(age.lifeExpectancyMercury()).toEqual(207);
 });
+
+test('should return the years a user has lived passed their life expectancy if they have a negative number of years remaining.',
+() => {
+  const age = new EarthYears(81);
+  expect(age.lifeExpectancy()).toEqual(-1);
+  expect(age.pastLifeExpectancy()).toEqual("You are 1 year older than the average life expectancy");
+});
+
 test('should return the years a user has lived passed their life expectancy if they have a negative number of years remaining.',
 () => {
   const age = new EarthYears(81);
