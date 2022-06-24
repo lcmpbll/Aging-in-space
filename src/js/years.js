@@ -41,6 +41,15 @@
     this.yearsRemainingMars = (80 * .53) - this.ageOnMars;
     return parseFloat(this.yearsRemainingMars.toFixed(2));
   }
+  lifeExpectancyVenus () {
+    this.yearsRemainingVenus = (80 * 1.6) - this.ageOnVenus;
+    return parseFloat(this.yearsRemainingVenus.toFixed(2));
+  }
+  lifeExpectancyMercury () {
+    this.yearsRemainingMercury = (80 * 4.14) - this.ageOnMercury;
+    return parseFloat(this.yearsRemainingMercury.toFixed());
+  }
 }
+
 
 
