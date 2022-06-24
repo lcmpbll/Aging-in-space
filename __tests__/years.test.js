@@ -30,7 +30,7 @@ test('should correctly return the inputted Earth age in Jupiter years ', () => {
 });
 
 test('should return a life expectancy based on inputted age and average life expectancy', () => {
-  const lifeLeft = new EarthYears(80);
-  expect(lifeLeft.lifeExpectancy).toEqual(80);
+  const age = new EarthYears(3);
+  expect(age.lifeExpectancy()).toEqual(77);
 })
 
