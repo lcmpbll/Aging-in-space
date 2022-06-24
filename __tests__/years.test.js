@@ -30,12 +30,20 @@ test('should correctly return the inputted Earth age in Jupiter years ', () => {
 
 test('should determine the number of years a user has left based average life expectancy', () => {
  const age = new EarthYears(30);
-  expect(age.lifeExpectancy()).toEqual(50);
+  expect(age.lifeExpectancy()).toEqual(50.00);
 });
 
 test('should determine the number of years a user has left in jupiter years', () => {
-  const ageOnJupiter = new EarthYears(2.52);
-  expect(ageOnJupiter.lifeExpectancyJupiter()).toEqual(77.48);
+  const age = new EarthYears(30);
+  expect(age.jupiterAge()).toEqual(2.52);
+  expect(age.lifeExpectancyJupiter()).toEqual(4.2);
+});
+
+test('should determine the number of years a user has left in mars years',
+() => {
+  const age = new EarthYears(30);
+  expect(age.marsAge()).toEqual(15.90);
+  expect(age.lifeExpectancyMars()).toEqual();
 });
 
 
