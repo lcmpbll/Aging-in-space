@@ -33,17 +33,24 @@ test('should determine the number of years a user has left based average life ex
   expect(age.lifeExpectancy()).toEqual(50.00);
 });
 
-test('should determine the number of years a user has left in jupiter years', () => {
+test('should determine the number of years a user has left in Jupiter years', () => {
   const age = new EarthYears(30);
   expect(age.jupiterAge()).toEqual(2.52);
   expect(age.lifeExpectancyJupiter()).toEqual(4.2);
 });
 
-test('should determine the number of years a user has left in mars years',
+test('should determine the number of years a user has left in Mars years',
 () => {
   const age = new EarthYears(30);
   expect(age.marsAge()).toEqual(15.90);
   expect(age.lifeExpectancyMars()).toEqual(26.5);
+});
+
+test('should determine the number of years a user has left in Venus years',
+() => {
+  const age = new EarthYears(30);
+  expect(age.venusAge()).toEqual(48.0);
+  expect(age.lifeExpectancyVenus()).toEqual();
 });
 
 
