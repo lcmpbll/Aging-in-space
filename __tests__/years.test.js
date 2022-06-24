@@ -50,7 +50,13 @@ test('should determine the number of years a user has left in Venus years',
 () => {
   const age = new EarthYears(30);
   expect(age.venusAge()).toEqual(48.0);
-  expect(age.lifeExpectancyVenus()).toEqual();
+  expect(age.lifeExpectancyVenus()).toEqual(80);
+});
+test('should determine the number of years a user has left in Mercury years',
+() => {
+  const age = new EarthYears(30);
+  expect(age.mercuryAge()).toEqual(124.2);
+  expect(age.lifeExpectancyMercury()).toEqual(207);
 });
 
 
