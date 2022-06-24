@@ -10,12 +10,12 @@ describe("EarthYears", () => {
 
 test('should correctly return the inputted Earth age in Mercury years', () => {
   const age = new EarthYears(3);
-  expect(age.mercuryAge()).toEqual("12.42");
+  expect(age.mercuryAge()).toEqual(12.42);
 });
 
 test('should correctly return the inputted Earth age in Venus years', () => {
   const age = new EarthYears(3);
-  expect (age.venusAge()).toEqual("4.80");
+  expect (age.venusAge()).toEqual(4.8);
 });
 
 test('should correctly return the inputted Earth age in Mars years ', () => {

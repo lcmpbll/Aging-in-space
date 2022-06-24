@@ -1,4 +1,4 @@
-import bizFunc from './js/years.js';
+import EarthYears from './js/years.js';
 import $ from 'jquery';
 // import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';

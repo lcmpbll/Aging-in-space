@@ -10,12 +10,12 @@
   }
   mercuryAge () {
     this.ageOnMercury = this.ageOnEarth * 4.14;
-    return this.ageOnMercury.toFixed(2);
+    return parseFloat(this.ageOnMercury.toFixed(2));
     
   }
   venusAge () {
     this.ageOnVenus = this.ageOnEarth * 1.6;
-    return this.ageOnVenus.toFixed(2);
+    return parseFloat(this.ageOnVenus.toFixed(2));
 
   }
   marsAge () {
