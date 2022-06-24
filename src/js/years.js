@@ -29,6 +29,7 @@
     this.yearsRemaining = 80 - this.ageOnEarth;
     return this.yearsRemaining;
   }
+  lifeExpectancyJupiter () {}
 }
 
 
