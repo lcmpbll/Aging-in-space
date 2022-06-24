@@ -43,7 +43,7 @@ test('should determine the number of years a user has left in mars years',
 () => {
   const age = new EarthYears(30);
   expect(age.marsAge()).toEqual(15.90);
-  expect(age.lifeExpectancyMars()).toEqual();
+  expect(age.lifeExpectancyMars()).toEqual(26.5);
 });
 
 
