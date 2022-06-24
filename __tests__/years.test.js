@@ -1,4 +1,4 @@
-import exampleTestFunction from '../src/js/biz-func.js';
+import exampleTestFunction from '../src/js/years.js';
 
 
 describe("exampleTestFunction", () => {
