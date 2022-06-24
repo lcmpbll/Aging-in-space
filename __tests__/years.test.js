@@ -15,5 +15,5 @@ test('should correctly return the inputted Earth age in Mercury years', () => {
 
 test('should correctly return the inputted Earth age in Venus years', () => {
   const age = new EarthYears(3);
-  expect (age.venusAge()).toEqual("4.8");
+  expect (age.venusAge()).toEqual("4.80");
 });
