@@ -57,12 +57,4 @@
       return "Keep getting older!"
     }
   }
-  pastLifeExpectancyMercury () {
-    if (this.yearsRemainingMercury < 0) {
-    let yearsOver = Math.abs(this.yearsRemainingMercury);
-    return "You are " + yearsOver.toString() + " year older than the average life expectancy";
-    } else {
-      return "Keep getting older!"
-    }
-  }
 };

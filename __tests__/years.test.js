@@ -88,9 +88,3 @@ test('should return the years a user has lived passed their life expectancy if t
   expect(age.pastLifeExpectancy()).toEqual("Keep getting older!");
 });
 
-test('should return the years a user has lived passed their life expectancy on Mercury if they have a negative number of years remaining.',
-() => {
-  const age = new EarthYears(81);
-  expect(age.lifeExpectancyMercury()).toEqual(1);
-  expect(age.pastLifeExpectancy()).toEqual("You are 1 year older than the average life expectancy");
-});
